@@ -17,12 +17,18 @@ public class TreeSetExamples {
     treeSet.add(6);
     System.out.println(treeSet);
 
+    //alphabetical order
+    //Set<String> wordSet = new TreeSet<>();
+
+    //sort by length
     Set<String> wordSet = new TreeSet<>(Comparator.comparing(String::length));
+
     wordSet.add("tiger");
     wordSet.add("giraffe");
     wordSet.add("bear");
     System.out.println(wordSet);
 
+    //bear and wolf are counting as duplicate becoz of the same length line no.24
     wordSet.add("wolf");
     System.out.println(wordSet);
 
