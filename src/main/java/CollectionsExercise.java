@@ -12,7 +12,8 @@ public class CollectionsExercise {
   }
 
   void addToStartOfLinkedList(LinkedList<Integer> numbers, int i) {
-    numbers.add(0, i);
+    //numbers.add(0, i);
+    numbers.addFirst(i);
   }
 
   void removeItemFromTopOfStack(Deque<Integer> stack) {
